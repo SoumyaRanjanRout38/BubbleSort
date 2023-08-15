@@ -1,0 +1,23 @@
+Bubble Sort:
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    	    int[] arr={1000,3,2,12,41,35,64,311,51,255,865,943};
+    	    int n=arr.length;
+    	    System.out.println(n);
+    	    for(int i=0;i<arr.length;i++){
+    	        for(int j=i+1;j<arr.length;j++){
+    	            if(arr[i]>arr[j]){
+    	                int temp=arr[i];
+    	                arr[i]=arr[j];
+    	                arr[j]=temp;
+    	            }
+    	        }
+    	    }
+    	    for(int i=0;i<arr.length;i++){
+    	        System.out.print(arr[i]+" ");
+    	    }
+	}
+}
